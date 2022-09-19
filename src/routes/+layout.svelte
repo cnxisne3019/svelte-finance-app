@@ -10,5 +10,5 @@
 </main>
 
 <footer class="px-4 py-6 text-center">
-	<p class="text-xs text-slate-500 font-semibold">visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p class="text-xs text-slate-500 font-light">visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer>
