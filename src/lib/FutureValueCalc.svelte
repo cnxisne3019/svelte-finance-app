@@ -1,6 +1,12 @@
 <script lang="ts">
 	let result: any = 0;
 
+	const formValues =  {
+		pv: '',
+		interest: '',
+		period: '',
+	}
+
 	let presentValue: number = 0;
 	let interestRate: number = 0;
 	let investPeriod: number = 0;
@@ -35,7 +41,7 @@
 	<label class="space-y-2">
 		<div class="text-sm text-slate-600 font-semibold">Initialize Fund</div>
 		<div class="w-full bg-white px-4 py-2 border border-slate-100 rounded-lg flex justify-between">
-			<input class="w-full bg-transparent" type="text" bind:value={presentValue} min="0" />
+			<input class="w-full bg-transparent" type="text" bind:value={formValues.pv} min="0" />
 			<div class="w-1/4 text-right font-semibold text-slate-800">THB</div>
 		</div>
 	</label>
@@ -48,7 +54,7 @@
 				pattern="^[0-9]*$"
 				type="text"
 				data-type="number"
-				bind:value={interestRate}
+				bind:value={formValues.interest}
 				min="0"
 				required
 			/>
@@ -62,7 +68,7 @@
 			<input
 				class="w-full bg-transparent outline-none"
 				type="text"
-				bind:value={investPeriod}
+				bind:value={formValues.period}
 				min="0"
 			/>
 			<div class="w-1/4 text-right font-semibold text-slate-800">Year</div>
@@ -70,5 +76,5 @@
 	</label>
 
 	<button on:click={Calc} class="w-full bg-slate-700 text-white py-4">Submit</button>
-
+	<pre>{JSON.stringify(formValues, null, 2)}</pre>
 </div>
