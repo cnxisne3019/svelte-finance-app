@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+
+	const imgUrl = new URL('$public/docs.png', import.meta.url).href
 </script>
 
 <Header />

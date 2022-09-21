@@ -4,6 +4,7 @@
 </script>
 
 <header>
+	<img class="absolute z-[-10] object-contain" src="https://tailwindui.com/img/beams-basic.png" alt="">
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />
