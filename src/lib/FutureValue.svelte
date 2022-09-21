@@ -47,7 +47,7 @@
 
 	<!-- Form Input -->
 	<label class="space-y-2">
-		<div class="text-sm text-slate-600 font-semibold">Initialize Fund</div>
+		<div class="text-sm text-slate-600 font-semibold">เงินลงทุนเริ่มต้น</div>
 		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
@@ -56,12 +56,12 @@
 				bind:value={_input.pv}
 				maxlength="11"
 			/>
-			<div class="w-1/4 text-right font-semibold text-slate-800">THB</div>
+			<div class="w-1/4 text-right font-semibold text-slate-800">บาท</div>
 		</div>
 	</label>
 
 	<label class="space-y-2">
-		<div class="text-sm text-slate-600 font-semibold">Initialize Fund</div>
+		<div class="text-sm text-slate-600 font-semibold">จำนวนปีที่ลงทุน</div>
 		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
@@ -70,12 +70,12 @@
 				bind:value={_input.period}
 				maxlength="2"
 			/>
-			<div class="w-1/4 text-right font-semibold text-slate-800">Year</div>
+			<div class="w-1/4 text-right font-semibold text-slate-800">ปี</div>
 		</div>
 	</label>
 
 	<label class="space-y-2">
-		<div class="text-sm text-slate-600 font-semibold">Annual Interest Rate</div>
+		<div class="text-sm text-slate-600 font-semibold">ผลตอบแทนรายปี</div>
 		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
