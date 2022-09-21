@@ -88,9 +88,9 @@
 		</div>
 	</label>
 
-	<div class="border border-slate-200 p-6 rounded-lg text-sm space-y-3 text-slte-500">
+	<!-- <div class="border border-slate-200 p-6 rounded-lg text-sm space-y-3 text-slte-500">
 		<h2 class="text-lg font-bold">Debug Panel</h2>
 		<pre>_inputRaw: {JSON.stringify(_inputRaw, null, 3)}</pre>
 		<pre>_input: {JSON.stringify(_input, null, 3)}</pre>
-	</div>
+	</div> -->
 </div>
