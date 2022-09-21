@@ -1,14 +1,4 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-
-	const dispatch = createEventDispatcher();
-
-	function sendSelectedFormula() {
-		dispatch('sendData', {
-			value: 1000
-		});
-	}
-
 	let formulas = [
 		{ id: 0, heading: 'Future Value' },
 		{ id: 1, heading: 'Find Interest' }
@@ -26,7 +16,6 @@
 		{/each}
 	</select>
 </div>
-<button on:click={() => dispatch('notify', 'detail value')}>Fire Event</button>
 <p>selected formula {selected ? selected.id : '[waiting...]'}</p>
 
 <!-- {#if selected.id == 0}
