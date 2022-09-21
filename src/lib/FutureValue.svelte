@@ -85,7 +85,7 @@
 				placeholder="4.5"
 				bind:value={_input.interest}
 				maxlength="6"
-        inputmode="numeric"
+        inputmode="decimal"
 			/>
 			<div class="w-1/4 text-right font-semibold text-slate-800">%</div>
 		</div>
