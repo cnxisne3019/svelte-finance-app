@@ -4,11 +4,10 @@
 
 	let result: any = 0;
 
-
-	const formValues: { pv: '' | number; interest: number; period: number } = {
+	const formValues: { pv: any | number; interest: any | number; period: any | number } = {
 		pv: '',
-		interest: 0,
-		period: 0
+		interest: '',
+		period: ''
 	};
 
 	function Calc() {
@@ -18,7 +17,7 @@
 
 <div class="flex flex-col space-y-4 ">
 	<div
-		class="w-full bg-slate-300/20 p-4 border border-slate-100 rounded-lg text-center space-y-2"
+		class="w-full bg-slate-300/20 p-6 border border-slate-100 rounded-lg text-center space-y-2"
 	>
 		<h2 class="text-sm font-semibold text-slate-500">Future Value Result</h2>
 		<div class="text-5xl font-bold text-sky-500">{utils.numberWithCommas(result)}</div>
@@ -45,6 +44,7 @@
 				class="w-full bg-transparent outline-none"
 				pattern="^[0-9]*$"
 				type="text"
+				placeholder="0"
 				data-type="number"
 				bind:value={formValues.interest}
 				min="0"
@@ -60,6 +60,7 @@
 			<input
 				class="w-full bg-transparent outline-none"
 				type="text"
+				placeholder="0"
 				bind:value={formValues.period}
 				min="0"
 			/>

@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Calc from '$lib/FutureValueCalc.svelte';
-	import Dropdown from '$lib/dropdownSelector.svelte'
+	import FormulaSelector from '$lib/FormulaSelector.svelte';
 	import '../app.css';
 </script>
 
@@ -10,6 +9,5 @@
 </svelte:head>
 
 <section class="w-full max-w-xl mx-auto">
-	<Dropdown/>
-	<Calc />
+	<FormulaSelector />
 </section>
