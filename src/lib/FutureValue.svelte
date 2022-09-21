@@ -55,6 +55,7 @@
 				placeholder="100,000"
 				bind:value={_input.pv}
 				maxlength="11"
+        inputmode="numeric"
 			/>
 			<div class="w-1/4 text-right font-semibold text-slate-800">บาท</div>
 		</div>
@@ -69,6 +70,7 @@
 				placeholder="30"
 				bind:value={_input.period}
 				maxlength="2"
+        inputmode="numeric"
 			/>
 			<div class="w-1/4 text-right font-semibold text-slate-800">ปี</div>
 		</div>
@@ -83,6 +85,7 @@
 				placeholder="4.5"
 				bind:value={_input.interest}
 				maxlength="6"
+        inputmode="numeric"
 			/>
 			<div class="w-1/4 text-right font-semibold text-slate-800">%</div>
 		</div>
