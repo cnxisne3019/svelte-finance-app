@@ -1,5 +1,4 @@
 <script lang="ts">
-	import FVC from '$lib/FutureValueCalc.svelte';
 	import FV from '$lib/FutureValue.svelte';
 
 	let formulas = [
@@ -7,7 +6,7 @@
 		{ id: '1', heading: 'Find Interest' }
 	];
 
-	$: selected  = formulas.find((o) => o.id === '0');
+	$: selected = formulas.find((o) => o.id === '0');
 </script>
 
 <div class="p-4 my-4 bg-white border border-slate-100 rounded-lg shadow-light">
@@ -24,8 +23,6 @@
 <p>Selected {JSON.stringify(selected)}</p>
 <p>{selected.id}</p> -->
 
-{#if selected.id === "0"}
-	<FVC/>
-	{:else if selected.id === "1"}
-	<FV/>
+{#if selected.id === '0'}
+	<FV />
 {/if}
