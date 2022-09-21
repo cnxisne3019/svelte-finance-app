@@ -40,15 +40,15 @@
 
 <div class="flex flex-col space-y-4">
 	<!-- Calculated Result -->
-	<div class="w-full bg-slate-300/20 p-6 border border-slate-100 rounded-lg text-center space-y-2">
-		<h2 class="text-sm font-semibold text-slate-500">Future Value Result</h2>
-		<div class="text-5xl font-bold text-sky-500">{utils.numberWithCommas(fvResult)}</div>
+	<div class="w-full bg-slate-100 p-6 rounded-xl text-center space-y-2">
+		<h2 class="text-sm font-light text-slate-500">มูลค่าเงินลงทุนของคุณในอนาคต</h2>
+		<div class="text-5xl font-semibold text-sky-500">{utils.numberWithCommas(fvResult)}</div>
 	</div>
 
 	<!-- Form Input -->
 	<label class="space-y-2">
 		<div class="text-sm text-slate-600 font-semibold">Initialize Fund</div>
-		<div class="w-full bg-white px-4 py-2 border border-slate-100 rounded-lg flex justify-between">
+		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
 				type="text"
@@ -62,7 +62,7 @@
 
 	<label class="space-y-2">
 		<div class="text-sm text-slate-600 font-semibold">Initialize Fund</div>
-		<div class="w-full bg-white px-4 py-2 border border-slate-100 rounded-lg flex justify-between">
+		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
 				type="text"
@@ -76,7 +76,7 @@
 
 	<label class="space-y-2">
 		<div class="text-sm text-slate-600 font-semibold">Annual Interest Rate</div>
-		<div class="w-full bg-white px-4 py-2 border border-slate-100 rounded-lg flex justify-between">
+		<div class="w-full bg-white px-4 py-3 border border-slate-100 rounded-xl flex justify-between">
 			<input
 				class="w-full bg-transparent outline-none"
 				type="text"
