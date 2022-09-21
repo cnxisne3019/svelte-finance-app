@@ -10,9 +10,7 @@
 </script>
 
 <div class="pt-4 flex justify-end">
-	<div
-		class="bg-emerald-500 flex space-x-2 rounded-full px-4 py-1.5 "
-	>
+	<div class="bg-emerald-500 flex space-x-2 rounded-full px-4 py-1.5 ">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
